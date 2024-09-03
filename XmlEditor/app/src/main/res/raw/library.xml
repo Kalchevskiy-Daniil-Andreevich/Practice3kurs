@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen</author>
+        <price>60</price>
+        <quantity>5</quantity>
+    </book>
+    <book>
+        <title>Database Systems: The Complete Book</title>
+        <author>Hector Garcia-Molina</author>
+        <price>80</price>
+        <quantity>3</quantity>
+    </book>
+    <book>
+        <title>Artificial Intelligence: A Modern Approach</title>
+        <author>Stuart Russell</author>
+        <price>100</price>
+        <quantity>7</quantity>
+    </book>
+</library>

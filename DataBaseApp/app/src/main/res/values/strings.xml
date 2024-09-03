@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DataBaseApp</string>
+    <string name="choose_country">Choose a country:</string>
+    <string name="car_brands">Car brands:</string>
+</resources>

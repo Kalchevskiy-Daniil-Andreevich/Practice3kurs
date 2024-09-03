@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<university>
+    <student>
+        <name>John Doe</name>
+        <grades>
+            <subject>
+                <name>Math</name>
+                <grade>85</grade>
+            </subject>
+            <subject>
+                <name>History</name>
+                <grade>92</grade>
+            </subject>
+        </grades>
+    </student>
+    <student>
+        <name>Jane Smith</name>
+        <grades>
+            <subject>
+                <name>Math</name>
+                <grade>78</grade>
+            </subject>
+            <subject>
+                <name>History</name>
+                <grade>88</grade>
+            </subject>
+        </grades>
+    </student>
+    <student>
+        <name>Michael Johnson</name>
+        <grades>
+            <subject>
+                <name>Math</name>
+                <grade>90</grade>
+            </subject>
+            <subject>
+                <name>History</name>
+                <grade>85</grade>
+            </subject>
+        </grades>
+    </student>
+    <student>
+        <name>Alice Brown</name>
+        <grades>
+            <subject>
+                <name>Math</name>
+                <grade>95</grade>
+            </subject>
+            <subject>
+                <name>History</name>
+                <grade>82</grade>
+            </subject>
+        </grades>
+    </student>
+</university>

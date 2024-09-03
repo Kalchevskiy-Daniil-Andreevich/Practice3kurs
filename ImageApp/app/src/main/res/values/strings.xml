@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ImageFormatConverter</string>
+    <string name="choose_format">Choose Format</string>
+    <string name="save_image">Save Image</string>
+    <string name="select_image">Select Image</string>
+    <string name="close_app">Close App</string>
+    <string name="format_text">Format Image</string>
+    <string-array name="image_options">
+        <item>Google</item>
+        <item>Instagram</item>
+        <item>Youtube</item>
+    </string-array>
+    <string-array name="format_options">
+        <item>JPEG</item>
+        <item>BMP</item>
+        <item>WEBP</item>
+    </string-array>
+</resources>

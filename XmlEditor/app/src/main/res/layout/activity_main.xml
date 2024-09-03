@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnOpenFile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="12dp"
+            android:text="@string/openFile"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnViewFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="12dp"
+            android:text="@string/viewFile"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autofillHints="Xml"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top"
+            android:hint="@string/editFile"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnSaveFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="12dp"
+            android:text="@string/saveFile"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnTransformXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="12dp"
+            android:text="@string/transformXml"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnCancelTransform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="12dp"
+            android:text="@string/cancelTransform"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/btnTransformXml"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCloseApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:padding="12dp"
+        android:text="@string/closeApp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/liaf"
+    tools:context=".Activity_second">
+
+    <Button
+        android:id="@+id/backMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/back_MainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backMain"
+        app:srcCompat="@drawable/smile" />
+
+    <ImageView
+        android:id="@+id/smile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backMain"
+        app:srcCompat="@drawable/lgsmile" />
+
+    <ImageButton
+        android:id="@+id/redAndroid"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#FF0000"
+        android:contentDescription="@string/red_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smile"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageButton
+        android:id="@+id/greenAndroid"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#4CAF50"
+        android:contentDescription="@string/green_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/happy"
+        app:layout_constraintVertical_bias="0.997"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="DuplicateIds" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="480dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+
+        <Button
+            android:id="@+id/fragmentFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/fragmentFirst" />
+
+        <Button
+            android:id="@+id/fragmentSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/fragmentSecond" />
+        />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="318dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/greenAndroid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/browser"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="61dp"
+        android:text="@string/browser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

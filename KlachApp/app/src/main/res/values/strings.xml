@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KlachApp</string>
+    <string name="logo_app">Мой калькулятор</string>
+    <string name="hint_first">Введите первое число</string>
+    <string name="hint_second">Введите второе число</string>
+    <string name="butt_plus">Сложить</string>
+    <string name="butt_minus">Вычесть</string>
+    <string name="butt_multiply">Умножить</string>
+    <string name="butt_divide">Разделить</string>
+    <string name="butt_clear">Очистить</string>
+    <string name="close_app">Закрыть приложения</string>
+    <string name="show_info">Информация об приложении</string>
+    <string name="new_activity">Перейти на новую страницу</string>
+    <string name="back_MainActivity">Вернуться на главную страницу</string>
+    <string name="red_android">Я красный</string>
+    <string name="green_android">Я зеленый</string>
+    <string name="fragmentFirst">Первый фрагмент</string>
+    <string name="fragmentSecond">Второй фрагмент</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="browser">Браузер</string>
+</resources>

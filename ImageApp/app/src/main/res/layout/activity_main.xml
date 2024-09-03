@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:contentDescription="@string/select_image"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:id="@+id/imageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/image_options"
+            android:minHeight="48dp"
+            android:prompt="@string/select_image" />
+
+        <Spinner
+            android:id="@+id/formatSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSpinner"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/format_options"
+            android:minHeight="48dp"
+            android:prompt="@string/choose_format" />
+
+        <TextView
+            android:id="@+id/formatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formatSpinner"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/format_text" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/formatTextView"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/save_image"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveButton"
+            android:layout_marginTop="16dp"
+            android:text="@string/close_app"
+            android:fontFamily="@font/montserrat_semibold"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:padding="16dp"/>
+
+    </RelativeLayout>
+</ScrollView>

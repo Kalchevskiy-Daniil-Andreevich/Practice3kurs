@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XmlEditor</string>
+    <string name="openFile">Open File</string>
+    <string name="viewFile">View file</string>
+    <string name="editFile">Edit XML content here</string>
+    <string name="saveFile">Save File</string>
+    <string name="closeApp">Close App</string>
+    <string name="transformXml">Transform XML</string>
+    <string name="cancelTransform">Cansel Transform</string>
+</resources>
